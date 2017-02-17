@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+class Solution {
+public:
+    string reverseString(string s) {
+        string a;
+        while(s.length()!= 0){
+            a.push_back(s.back());
+            s.pop_back();
+        }
+    
+        return a;
+    }
+};
